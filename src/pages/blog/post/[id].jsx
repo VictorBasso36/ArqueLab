@@ -187,7 +187,7 @@ export default function blogPost({post, category, random}) {
   )
 }
 export async function getStaticPaths() {
-  const apiUrl = 'http://127.0.0.1:8000/api/blog/showAll';
+  const apiUrl = 'https://amplycms.com.br/api/blog/showAll';
   const response = await axios.post(apiUrl, { domain: 'https://www.arquelab.com.br/' });
   const posts = response.data;
 
@@ -200,7 +200,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const apiUrl = 'http://127.0.0.1:8000/api/blog/showIndex';
+  const apiUrl = 'https://amplycms.com.br/api/blog/showIndex';
   const response = await axios.post(apiUrl, { id: params.id });
   const post = response.data;
   const dataFetch = JSON.parse(post.substring(post.indexOf('{')))
@@ -208,7 +208,7 @@ export async function getStaticProps({ params }) {
   let category = [];
 
   try {
-    const apiUrlCategoria = 'http://127.0.0.1:8000/api/blog/showCategoryDomain';
+    const apiUrlCategoria = 'https://amplycms.com.br/api/blog/showCategoryDomain';
     const responseCategoria = await axios.post(apiUrlCategoria, { 
       domain: dataFetch.domain,
       categoria: dataFetch.categoria
@@ -222,7 +222,7 @@ export async function getStaticProps({ params }) {
 
   let random = []
   try{
-    const apiUrlrandom = 'http://127.0.0.1:8000/api/blog/showAllRandom';
+    const apiUrlrandom = 'https://amplycms.com.br/api/blog/showAllRandom';
     const responserandom = await axios.post(apiUrlrandom, { 
       domain: dataFetch.domain,
     });

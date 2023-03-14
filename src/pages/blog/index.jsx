@@ -34,7 +34,7 @@ export default function blog({posts, totalPages}) {
 }
 export async function getStaticProps() {
   try {
-    const response = await axios.post('http://127.0.0.1:8000/api/blog/showAll', { domain });
+    const response = await axios.post('https://amplycms.com.br/api/blog/showAll', { domain });
     const posts = response.data;
     const totalPages = Math.ceil(posts.length / postsPerPage);
     console.log("meu teste")
