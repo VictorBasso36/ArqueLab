@@ -1,0 +1,561 @@
+.MainPostList{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ContainerPostList{
+    max-width: 1400px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* principal */
+.LastedPost{
+    margin-bottom: 60px;
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+}
+.LastedPost img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.LastedPostImg{
+    height:100%;
+    width: 48%;
+    overflow: hidden;
+ 
+    margin-left: 30px;
+    border-radius: var(--border-radius);
+}
+.LastedPostConteudo{
+    width: 48%;
+    display: flex;
+    height: 100%;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.LastedPostConteudo p{
+    font-size: 1.3rem;
+    font-family: var(--font-p);
+}
+.LastedPostConteudo h2{
+    line-height: 100%;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 3.2rem;
+    font-family: var(--font-h2);
+}
+
+/*fim principal */
+/* cards */
+.AllCarders{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.AllCarders a{
+    margin: 12px;
+}
+.BlogCarder{
+    width: 380px;
+    margin:30px ;
+}
+
+.BlogCarder p{
+    font-family: var(--font-p);
+    margin: 10px 0px;
+    font-size: 1.3rem;
+}
+
+.BlogCarder h2{
+    font-family: var(--font-h2);
+    font-size: 1.87rem;
+    overflow: hidden;
+    text-align: justify;
+    line-height: 100%;
+    word-wrap: break-word;
+
+}
+
+.CardPhoto{
+    width: 100%;
+    border-radius: var(--border-radius);
+    height: 250px;
+}
+
+/* fimcards */
+
+
+.paginationHere{
+    margin-bottom: 0px;
+}
+
+.IfZero{
+    font-family: var(--font-h2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 90%;
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) and (max-width:1250px){
+/* principal */
+.LastedPost{
+    margin-bottom: 40px;
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+.LastedPost img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.LastedPostImg{
+    height:100%;
+    width: 48%;
+    overflow: hidden;
+ 
+    margin-left: 30px;
+    border-radius: var(--border-radius);
+}
+.LastedPostConteudo{
+    width: 48%;
+    display: flex;
+    height: 100%;
+    margin-left: 10px;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.LastedPostConteudo p{
+    font-size: 1.3rem;
+    font-family: var(--font-p);
+}
+.LastedPostConteudo h2{
+    line-height: 100%;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-family: var(--font-h2);
+}
+
+/*fim principal */
+}
+
+@media screen and (min-width:850px) and (max-width:1024px){
+    /* principal */
+.LastedPost{
+    margin-bottom: 60px;
+    display: flex;
+    height: unset;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.LastedPost img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.LastedPostImg{
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    margin-left: 0px;
+
+    border-radius: var(--border-radius);
+}
+.LastedPostConteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 10px;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.LastedPostConteudo p{
+    font-size: 1.5rem;
+    text-align: justify;
+    font-family: var(--font-p);
+}
+.dateh1{
+    margin-top: 20px;
+}
+
+.LastedPostConteudo h2{
+    line-height: 100%;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-family: var(--font-h2);
+}
+
+/*fim principal */
+/* cards */
+.AllCarders{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.BlogCarder{
+    width: 300px;
+    margin:40px 0px ;
+}
+
+.BlogCarder p{
+    font-family: var(--font-p);
+    margin: 10px 0px;
+    font-size: 1.3rem;
+}
+
+.BlogCarder h2{
+    font-family: var(--font-h2);
+    font-size: 2rem;
+    line-height: 100%;
+    text-align: left;
+}
+
+.CardPhoto{
+    width: 100%;
+    border-radius: var(--border-radius);
+    height: 200px;
+}
+
+/* fimcards */
+
+
+.paginationHere{
+    margin-bottom: 30px;
+}
+}
+@media screen and (min-width:750px) and (max-width:850px){
+    /* principal */
+    .LastedPost{
+        margin-bottom: 60px;
+        display: flex;
+        height: unset;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .LastedPost img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .LastedPostImg{
+        height:100%;
+        width: 100%;
+        overflow: hidden;
+        height: 400px;
+        margin-left: 0px;
+    
+        border-radius: var(--border-radius);
+    }
+    .LastedPostConteudo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 10px;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .LastedPostConteudo p{
+        font-size: 1.5rem;
+        text-align: justify;
+        font-family: var(--font-p);
+    }
+    .dateh1{
+        margin-top: 20px;
+    }
+    
+    .LastedPostConteudo h2{
+        line-height: 100%;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        font-family: var(--font-h2);
+    }
+    
+    /*fim principal */
+    /* cards */
+    .AllCarders{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-top: 1px solid rgb(200, 200, 200);
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .BlogCarder{
+        width: 300px;
+        margin:40px 0px ;
+    }
+    
+    .BlogCarder p{
+        font-family: var(--font-p);
+        margin: 10px 0px;
+        font-size: 1.3rem;
+    }
+    
+    .BlogCarder h2{
+        font-family: var(--font-h2);
+        font-size: 2rem;
+        line-height: 100%;
+        text-align: left;
+    }
+    
+    .CardPhoto{
+        width: 100%;
+        border-radius: var(--border-radius);
+        height: 200px;
+    }
+    
+    /* fimcards */
+    
+    
+    .paginationHere{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:550px) and (max-width:750px){
+    /* principal */
+    .LastedPost{
+        margin-bottom: 60px;
+        display: flex;
+        height: unset;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .LastedPost img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .LastedPostImg{
+        height:100%;
+        width: 100%;
+        overflow: hidden;
+        height: 400px;
+        margin-left: 0px;
+    
+        border-radius: var(--border-radius);
+    }
+    .LastedPostConteudo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 10px;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .LastedPostConteudo p{
+        font-size: 1.5rem;
+        text-align: justify;
+        font-family: var(--font-p);
+    }
+    .dateh1{
+        margin-top: 20px;
+    }
+    
+    .LastedPostConteudo h2{
+        line-height: 100%;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        font-family: var(--font-h2);
+    }
+    
+    /*fim principal */
+    /* cards */
+    .AllCarders{
+        display: flex;
+        justify-content: center;
+        flex-wrap: unset;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1px solid rgb(200, 200, 200);
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .BlogCarder{
+        width: 300px;
+        margin:40px 0px ;
+    }
+    
+    .BlogCarder p{
+        font-family: var(--font-p);
+        margin: 10px 0px;
+        font-size: 1.3rem;
+    }
+    
+    .BlogCarder h2{
+        font-family: var(--font-h2);
+        font-size: 2rem;
+        line-height: 100%;
+        text-align: left;
+    }
+    
+    .CardPhoto{
+        width: 100%;
+        border-radius: var(--border-radius);
+        height: 200px;
+    }
+    
+    /* fimcards */
+    
+    
+    .paginationHere{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width:280px) and (max-width:550px){
+    /* principal */
+    .LastedPost{
+        margin-bottom: 60px;
+        display: flex;
+        height: unset;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .LastedPost img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .LastedPostImg{
+        height:100%;
+        width: 100%;
+        overflow: hidden;
+        height: 60vw;
+        margin-left: 0px;
+        
+        border-radius: var(--border-radius);
+    }
+    .LastedPostConteudo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 10px;
+        align-items:flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .LastedPostConteudo p{
+        font-size: 1.5rem;
+        text-align: justify;
+        font-family: var(--font-p);
+    }
+    .dateh1{
+        margin-top: 20px;
+    }
+    
+    .LastedPostConteudo h2{
+        line-height: 100%;
+        margin-bottom: 20px;
+        font-size: 11vw;
+        font-family: var(--font-h2);
+    }
+    
+    /*fim principal */
+    /* cards */
+    .AllCarders{
+        display: flex;
+        justify-content: center;
+        flex-wrap: unset;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1px solid rgb(200, 200, 200);
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .BlogCarder{
+        width: 300px;
+        margin:40px 0px ;
+    }
+    
+    .BlogCarder p{
+        font-family: var(--font-p);
+        margin: 10px 0px;
+        font-size: 6.1vw;
+    }
+    
+    .BlogCarder h2{
+        font-family: var(--font-h2);
+        font-size:8vw;
+        line-height: 100%;
+        text-align: left;
+    }
+    
+    .CardPhoto{
+        width: 100%;
+        border-radius: var(--border-radius);
+        height: 200px;
+    }
+    
+    /* fimcards */
+    
+    
+    .paginationHere{
+        margin-bottom: 30px;
+    }
+    .dateh1{
+        font-size: 5.5vw!important;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:320px){
+    .BlogCarder{
+        width: 90vw;
+        margin:40px 0px ;
+    }
+    .BlogCarder h2{
+        font-family: var(--font-h2);
+        font-size:8vw;
+        line-height: 100%;
+        text-align: left;
+    }
+    .LastedPostConteudo h2{
+        line-height: 100%;
+        margin-bottom: 20px;
+        font-size:8.8vw;
+        font-family: var(--font-h2);
+    }
+}
+
+
+
+@media screen and (min-width:1250px) {
+    .LastedPost{
+        margin-bottom: 60px;
+        display: flex;
+        height: 400px!important;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+

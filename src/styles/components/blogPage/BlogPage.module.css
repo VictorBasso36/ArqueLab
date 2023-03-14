@@ -1,0 +1,331 @@
+.postarea{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.postareacontainer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+}
+.MainAreaMenu{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+}
+.MainAreaMenu a{
+    align-items: center;
+    margin-bottom: 40px;
+    text-decoration: none;
+
+    justify-self: center;
+    display: flex;
+}
+.MainAreaMenu a p{
+    margin-left: 10px;
+    color: black;
+    font-family: var(--font-h2);
+    text-decoration: none;
+   
+}
+.divContent{
+    width: 65%;
+}
+.postareacontainer pre{
+    width: 100%;
+    white-space: break-spaces;
+}
+.patternbutton{
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    height: 60px;
+    border-radius: 12px;
+    width: 60px;
+    background-color: var(--Main-Color);
+}
+.patternbutton:hover{
+    background-color:#ba1e5f;
+}
+.patternbutton img{
+    width: 60%;
+
+}
+.itensRecomendados{
+    width: 350px;
+}
+.itensRecomendados a{
+    text-decoration: none;
+    color: unset;
+}
+.itensRecomendados h3{
+    font-size: 24px;
+    font-family: var(--font-h2);
+}
+.Recomendacao{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.Recomendacao h4{
+    width: 60%;
+    font-family: var(--font-h1);
+    line-height: 100%;
+}
+.OutrosArtigosPhoto{
+    width: 120px;
+    margin-right: 10px;
+    height: 80px;
+    display: flex;
+    border-radius: 9px;
+}
+.BlogConteudoAqui{
+    flex-direction: column;
+    display: flex;
+}
+
+.BlogConteudoAqui h1{
+    font-family: var(--font-h1);
+    font-size: 2.5rem;
+    color: black;
+    text-align: left;
+}
+
+.BlogConteudoAqui p{
+    font-family: var(--font-p);
+    width: 100%;
+    color: black;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.BlogConteudoAqui i{
+    font-family: var(--font-p);
+    width: 100%;
+    text-align: justify;
+    color: rgb(45, 45, 45);
+    font-size: 1.3rem;
+}
+.BlogConteudoAqui img{
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: auto!important;
+}
+.BlogConteudoAqui  a{
+    color: var(--Main-Color);
+}
+
+
+
+.AllCarders{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+
+}
+.AllCarders a{
+    margin: 12px;
+}
+
+.BlogCarder{
+    width: 380px;
+    margin:30px ;
+}
+
+.BlogCarder p{
+    font-family: var(--font-p);
+    margin: 10px 0px;
+    font-size: 1.3rem;
+}
+
+.BlogCarder h2{
+    font-family: var(--font-h2);
+    font-size: 1.87rem;
+    overflow: hidden;
+    line-height: 100%;
+    word-wrap: break-word;
+
+}
+
+.CardPhoto{
+    width: 100%;
+    border-radius: var(--border-radius);
+    height: 250px;
+}
+
+.ConvertHere{
+    height: 450px;
+    background-color: var(--Second-Color);
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    
+    justify-content: center;
+}
+.ConvertHereContainer{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+    flex-direction: column;
+}
+.ConvertHereContainer button{
+    background-color: var(--Main-Color);
+    height: 50px;
+    padding: 12px;
+    margin-top: 30px;
+    font-size:1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+}
+.ConvertHereContainer button:hover{
+    background-color: #ba1e5f;
+}
+.ConvertHereContainer button{
+    font-family: var(--font-p);
+    color: white;
+
+}
+.ConvertHereContainer h2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--font-h1);
+}
+.ConvertHereContainer p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--font-p);
+}
+
+.ConvertHereContainer input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: var(--font-p);
+    font-size: 1.5rem;
+    outline: none;
+    height: 35px;
+    margin-top: 30px;
+    border-bottom:3px solid white;
+}
+
+.ConvertHereContainer input::placeholder{
+    color: white;
+    font-family: var(--font-p);
+    font-size: 1.5rem;
+}
+.PostRelacionados{
+    font-family: var(--font-h2);
+    margin: 30px auto 30px auto;
+    width: 90%;
+    max-width: 1600px;
+    font-size: 2.5rem;
+
+}
+.PostRelacionados h2{
+    font-size: 2.5rem;
+}
+
+
+.ConvertHereContainer form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.MySocialMedia{
+    display: flex;
+}
+
+.MySocialMedia div{
+    width: 60px;
+}
+
+.MySocialMedia div svg{
+    width: 90%;
+}
+.ShareButton{
+    cursor: pointer;
+    fill: var(--Main-Color);
+}
+.myContato{
+    background-color: var(--Main-Color);
+    height: 30px;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.myContato:hover {
+    background-color: #ba1e5f;
+}
+.myContato p{
+    color: white;
+    font-family: var(--font-p);
+    font-size: 20px;
+}
+
+@media screen and (min-width:850px) and (max-width:1024px){
+    .postareacontainer{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1600px;
+        flex-direction: column;
+    }
+    .divContent{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:550px) and (max-width:850px){
+    .postareacontainer{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1600px;
+        flex-direction: column;
+    }
+    .divContent{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:280px) and (max-width:550px){
+    .postareacontainer{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1600px;
+        flex-direction: column;
+    }
+    .divContent{
+        width: 100%;
+    }
+    .BlogConteudoAqui h1{
+        font-family: var(--font-h1);
+        font-size: 2rem;
+        white-space: break-spaces;
+        color: black;
+        text-align: left;
+    }
+}

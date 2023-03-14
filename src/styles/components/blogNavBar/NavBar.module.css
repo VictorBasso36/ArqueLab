@@ -1,0 +1,167 @@
+
+
+.MainNavbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerMainNavbar{
+    width: 90%;
+    height: 120px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navList{
+    display: none;
+ 
+}
+.LogoBlog{
+    width: 60px;
+    height: 60px;
+}
+
+.navList ul{
+    display: flex;
+    font-family: var(--font-p);
+    list-style: none;
+}
+.navList ul a{
+    text-decoration: none;
+    color: var(--Main-Color)
+}
+.navList ul span li{
+    color: var(--Main-Color);
+    text-decoration:underline;
+}
+.navList ul li{
+    color: black;
+    font-size: 1.5rem;
+    margin: 0px 30px;
+}
+.navList ul li:hover{
+    text-decoration:underline;
+    color: var(--Main-Color)
+}
+
+
+.Hambmenu{
+    width: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    height: 60px;
+    transition: all 500ms ease-in-out;
+    background-color: var(--Main-Color);
+    border-radius: var(--border-radius);
+}
+.HambmenuContainer{
+    width: 70%;
+    height: 70%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    transition: all 500ms ease-in-out;
+    justify-content: space-evenly;
+}
+.Hambmenu:hover {
+    background-color: #ba1e5f;
+}
+.Hambmenu:hover  .HambmenuContainer{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 70%;
+}
+.Hambmenu:hover  .HambmenuContainer div:nth-child(1){
+    position: absolute;
+    transform: rotate(45deg);
+    transition: all 500ms ease-in-out;
+ }
+.Hambmenu:hover  .HambmenuContainer div:nth-child(2){
+   position: absolute;
+   margin-left: -300px;
+   transition: all 500ms ease-in-out;
+}
+.Hambmenu:hover  .HambmenuContainer div:nth-child(3){
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: all 500ms ease-in-out;
+ }
+.HambmenuContainer div{
+    width: 100%;
+    background-color: white;
+    position: relative;
+    height: 3px;
+    border-radius: 12px;
+    display: flex;
+    transition: all 500ms ease-in-out;
+}
+.HambmenuContainer div:nth-child(1){
+    transform: rotate(0deg);
+    transition: all 500ms ease-in-out;
+}
+.HambmenuContainer div:nth-child(2){
+
+    margin-left: 0px;
+    transition: all 500ms ease-in-out;
+ }
+.modalmenu{
+    position: fixed;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modalmenu ul{
+    text-align: center;
+    font-family: var(--font-p);
+    list-style: none;
+}
+.modalmenu ul a{
+    text-decoration: none;
+    color: var(--Main-Color)
+}
+.modalmenu ul span li{
+    color: var(--Main-Color);
+    text-decoration:underline;
+}
+.modalmenu ul li{
+    color: black;
+    width: 90%;
+    font-size: 1.5rem;
+    margin: 3vw 0vw;
+}
+.modalmenu ul li:hover{
+    text-decoration:underline;
+    color: var(--Main-Color)
+}
+
+
+@media screen and (min-width:1024px) {
+    .navList{
+        display: flex;
+    }
+    .Hambmenu{
+        display: none;
+    }
+}
+@media screen and (max-width:1024px) {
+    .navList{
+        display: none;
+    }
+    .Hambmenu{
+        display: flex;
+    }
+}

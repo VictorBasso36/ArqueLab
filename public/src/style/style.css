@@ -1,0 +1,3109 @@
+*{  text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*fixedbar*/
+.socialmediaiconsfixedbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 300;
+    justify-content: center;
+    background-color: rgba(78,124,138,0.90);
+    position: fixed;
+    bottom: 0;
+    animation-name:fadeInUp;
+    animation-duration: 1s;
+}
+.socialmediaiconsfixedbar img {
+    width: 30px;
+    margin: 15px;
+}
+/* .socialmediaiconsfixedbar img{
+    left: 0;
+    position: absolute;
+} */
+
+/*fimfixedbar*/
+.loader{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+  }
+  .disppear{
+    animation: vanish 1s forwards;
+  }
+  @keyframes vanish {
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+.containerportifolio{
+    min-height: 571px;
+    width: 1700px;
+    display: flex;
+}
+/*scrollreveal*/
+
+.contatotato img{
+    opacity: 0;
+}
+
+.navmudalogo{
+    opacity: 1;
+    transition: opacity 500ms;
+    transition-duration: 5s;
+}
+/*PersonalizarScrollbar*/
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    
+    
+}
+::-webkit-scrollbar-thumb {
+    background: #ea1e7697;
+    border-radius: 0px 0px 30px 30px;
+}
+html{scroll-behavior: smooth;
+    
+}
+
+
+body{
+    /*-webkit-box-shadow: inset 0px 0px 28px -4px rgba(231,30,118,0.91); 
+    box-shadow: inset 0px 0px 28px -4px rgba(231,30,118,0.91);*/
+    background-image: url("../img/allbg.png");
+    background-size: cover;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.cometavaratudo{
+    max-width: 315px;
+    display: none;
+}
+.resp800div{
+    display: none;
+}
+.pesresp800{
+    display: none;
+}
+.textresponsive240{
+    display: none;
+}
+.imgsucessresponsivefim{
+    display: none;
+}
+/*narbarmodal*/
+
+.navbarmodal{
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/bgmodal.png");
+    z-index: 999;
+    opacity: 0.949;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transition: opacity 1500ms;
+   
+}
+
+/*fimnavbarmodal*/
+.homesection{
+
+    min-height: 680px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-size: cover;
+    background-image: url("../img/Camada23.png");
+}
+
+.somenoandroidfrasemobile{
+    display: none;
+}
+.socialmedia2{
+    align-items:flex-end;
+    width: 100%;
+    justify-content:center;
+    flex-direction:row;
+    display: flex;
+    background-color: #e71e76;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    
+}
+.alinhaicons2{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.socialmedia2 div{
+   
+    margin: 5%;
+    
+}
+.navbarmodal a{
+    font-family: 'GigantRegular';
+    font-size: 60px;   
+    font-weight: normal;
+    color: #ffffff;
+   
+    text-align: center;
+    margin:5px;
+    z-index: 51;
+    text-shadow:0 0 20px rgba(57,172,195,1), 0 0 15px rgba(57,172,195,1), 0 0 10px rgba(57,172,195,1);
+      
+}
+.navbarmodal a:hover{
+    font-family: 'GigantRegular';
+    font-size: 60px;   
+    font-weight: normal;
+    color: #ea1e77;
+    
+    text-align: center;
+    margin: 5px;
+    z-index: 51;
+}
+/*fimnavbar*/
+.container{
+    min-height: 680px;
+    width: 100%;
+    max-width: 1700px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.socialmediamenu{
+    align-items: center;
+    justify-content: center;
+    background-color: #e71e76;
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    z-index: 500;
+    bottom: 0;
+    margin-bottom: 100px;
+}
+.alinhaicons{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.socialmediamenu div{
+   
+    margin: 5%;
+    
+}
+header{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 500;
+    text-align: center;
+    justify-content:space-between;
+    height: 150px;
+    background-color: transparent;
+    
+}
+.headeractive{
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-name: aparecebackground;
+    animation-duration: 1s;
+}
+.headerinative{
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count:1;
+    animation-fill-mode: forwards;
+    animation-name: aparecebackgroundd;
+    animation-duration: 1s;
+}
+@keyframes aparecebackgroundd{
+    0%{
+         background-color: rgba(78,124,138,0.9);
+    }
+    100%{
+          
+        background-color: transparent;
+    }
+}
+@keyframes aparecebackground{
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: rgba(78,124,138,0.9);   
+        
+    }
+}
+.buttonmenu{
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+    border: none;
+}
+.MenuMobile{
+    pointer-events: painted;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    justify-content:space-around;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+    transition: width 1s, height 1s ease-in-out;
+    -webkit-transition: width 1s, height 1s ease-in-out;
+    -moz-transition: width 1s, height 1s ease-in-out;
+    -o-transition: width 1s, height 1s ease-in-out;
+   
+}
+nav{
+    pointer-events: painted;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.amenu{
+    font-family: 'GigantRegular';
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration:none ;
+    z-index: -1;
+    transition:font-size 1s;
+     -moz-transition:font-size 1s; /* Firefox 4 */
+     -webkit-transition:font-size 1s; /* Safari and Chrome */
+     -o-transition:font-size 1s;
+    
+}
+
+.lineonemenu{
+    z-index: -1;
+    width: 100%;
+    height: 7px;
+    background-color: aliceblue;
+    border-radius:12px;
+  
+}
+.linetwomenu{
+    z-index: -1;
+    width: 100%;
+    height: 7px;
+    background-color: aliceblue;
+    border-radius:12px;
+
+}
+
+.linethreemenu{
+    z-index: -1;
+    width: 50%;
+    height: 7px;
+    background-color: aliceblue;
+    border-radius:12px;
+
+}
+.alinklogo{
+    opacity: 0!important;
+    animation-duration: 1s;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.alinklogoactive{
+    opacity: 1!important;
+    animation: bounceIn;
+    animation-duration: 1s;
+}
+
+
+.alinklogoactivescroll{
+    opacity: 1!important;
+    animation:bounceInLeft;
+    animation-duration: 0.8s;
+}
+.alinklogo img{
+    width: 100%;
+}
+
+/*tituloimgs*/
+.guardadivstitulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;  
+    max-width: 1630px; 
+    position: absolute;
+}
+.box{
+    position: absolute;
+    background-color: #000000;
+    
+}
+
+.guardapartecimatitulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    
+    
+}
+.guardaabducting{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom:40px;
+    width: 90%;
+    
+    
+}
+.guardapartebaixotitulos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 90%;
+    
+    
+}
+.guardalevel{
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    width: 90%;
+    
+    
+
+}
+.brandsblue{
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    position:absolute;
+   
+}
+
+.brandsrosaescuro{
+    z-index: 2;
+    margin: 2px;
+    position:absolute;
+    
+}
+.brandsrosaclaro{
+    z-index: 1;
+    position:absolute;
+    
+}
+
+
+.levelbranco{
+    position:absolute;
+    z-index: 3;
+   
+}
+.levelazulclaro{
+    z-index: 2;
+    
+    position:absolute;
+}
+
+.levelrosaclaro{
+    
+    z-index: 1;
+    position:absolute;
+}
+
+.arrowbutton{
+    z-index: 200;
+    background-color: transparent;
+    margin-bottom: 5%;
+    border: none;
+    bottom: 0;
+    position: absolute;
+    animation: none;
+    animation-duration:0s;
+}
+.arrowbuttonactive{
+    z-index: 200;
+    background-color: transparent;
+    margin-bottom: 5%;
+    border: none;
+    bottom: 0;
+    position: absolute;
+    animation:shakeY;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+/*fimtela1*/
+/*teladois*/
+.sectiondois{
+   /* box-shadow: 23px 0px 28px -11px rgba(231,30,118,0.75) inset;
+    -webkit-box-shadow: 23px 0px 28px -11px rgba(231,30,118,0.75) inset;
+    -moz-box-shadow: 23px 0px 28px -11px rgba(231,30,118,0.75) inset;*/
+    padding-top: 200px;
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  /*  animation-name: animpink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;*/
+}
+@keyframes animpink {
+    20%{
+        box-shadow: 23px 0px 28px -11px rgba(231,30,118,0.75) inset;
+        -webkit-box-shadow: 23px 0px 28px -11px rgba(231,30,118,0.75) inset;
+        -moz-box-shadow: 23px 0px 28px -11px rgba(231,30,118,0.75) inset;
+    }
+    60%{
+        box-shadow: 38px 0px 57px -11px rgba(231,30,118,0.75) inset;
+        -webkit-box-shadow: 38px 0px 57px -11px rgba(231,30,118,0.75) inset;
+        -moz-box-shadow: 38px 0px 57px -11px rgba(231,30,118,0.75) inset;
+    }
+    80%{
+        box-shadow: 24px 12px 48px -17px rgba(231,30,118,0.87) inset;
+-webkit-box-shadow: 24px 12px 48px -17px rgba(231,30,118,0.87) inset;
+-moz-box-shadow: 24px 12px 48px -17px rgba(231,30,118,0.87) inset;
+    }
+    100%{
+        box-shadow: 13px 0px 48px -11px rgba(231,30,118,0.87) inset;
+-webkit-box-shadow: 13px 0px 48px -11px rgba(231,30,118,0.87) inset;
+-moz-box-shadow: 13px 0px 48px -11px rgba(231,30,118,0.87) inset;
+    }
+}
+.containerdois{
+    
+    width: 100%;
+    max-width: 1700px;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+.Logo360andtext{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.roboduascores{
+    max-width: 1000px;
+
+
+}
+
+.divimg360{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.img360{
+    opacity: 0;
+    margin: 2%;
+    width: 40%;
+    margin-left: 30px;
+}
+.divduasfotos{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.roboduascores{
+    width: 60%;
+}
+.textpink{
+    padding: 60px 30px 30px 30px;
+    text-align: justify;
+    font-family: 'McqueenLight';
+    font-size: 21px;
+    color: aliceblue;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+    background-color: #e71e76;
+}
+.activeanima{
+    animation-name:none;
+    opacity: 0;
+    animation-duration: 2s;
+}
+.activeanimaactive{
+    animation-name:fadeInLeft;
+    animation-duration: 0.8s;
+    opacity: 1;
+    animation-delay: 0s;
+}
+.activeani{
+    animation-name:none;
+    opacity: 0;
+    animation-duration: 2s;
+}
+.activeaniactive{
+    animation-name:fadeInRight;
+    animation-duration: 0.8s;
+    opacity: 1;
+    animation-delay: 0s;
+}
+
+
+
+.pinktextdestaque{
+    font-family: 'McqueenBold';
+    font-size: 18px;
+}
+.planeta1{
+    position: absolute;
+    right: 0;
+    margin-top: 3%;
+    margin-right: 300px;
+    width: 30%;
+}
+.titleservicos{
+    position: absolute;
+    opacity: 0;
+    }
+
+/*servicostitle*/
+.servicostitleonly{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;    
+}
+
+
+
+
+
+.sectionicons{
+    
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.containericons{
+    max-width: 1700px;
+    margin-top: 120px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.alignicons{
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction:row;
+    
+   
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+
+}
+
+.icon p{
+    font-family: 'McqueenBold';
+    color: #e71e76;
+    font-size: 18px;
+}
+.icon a{
+    font-family: 'McqueenBold';
+    color: #55a8b2;
+    font-size: 18px;
+}
+
+
+.cases{
+    width: 100vw;
+    max-width: 1700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.casestitle{
+    opacity: 0;
+    width: 20%;
+    margin-left: 30px;
+}
+.discovoador{
+    width: 30%;
+    margin-left: 30px; 
+}
+
+.pinktestecases{
+    background-color: #e71e76;
+    width: 80%;
+    padding: 30px;
+    position: absolute;
+}
+.pinktestecases p {
+    font-family: 'McqueenLight';
+    font-size: 21px;
+    color: aliceblue;
+}
+.alignitensportifolio{
+    margin-top: 8%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.alinharlogos{
+    margin-top: 5%;
+    width: 55%;
+    max-width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.alinharlogos div{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+.alinharlogos div img{
+    width: 150%;
+}
+
+
+.contato{
+    max-width: 1700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.contatocometa{
+    margin-left: 30px;
+}
+.contatotato{
+ 
+    margin-right: 30px;
+}
+.titulocontato h1{
+    font-family: 'GigantRegular';
+    color: aliceblue;
+    font-size:40px;
+    width: 50%;
+}
+.titulocontato h1 span{
+    color: #e71e76;
+}
+
+
+.formularioecontato{
+    
+    height:max-content;
+    width: 100vw;
+    max-width: 1700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.alinhaatendimentodown{
+    margin-right: 5px;
+    margin-top: 100px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+   
+}
+.alinhacontatotop{
+    margin-left: 5px;
+    margin-bottom: 30px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+.tato{
+    opacity: 0;
+    display: flex;
+  
+    
+}
+.atendimento{
+    
+    padding: 30px;
+    width: 100%;
+    min-height: 700px;
+
+    background-image: url("../img/SUCCESSBACKGROUND.png");
+    background-size: cover;
+  
+    
+}
+.atendimento a{
+    font-family: 'McqueenLight';
+    font-size: 25px;
+    color: aliceblue;
+   
+}
+.atendimentonumbers{
+    opacity: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.atendimentonumbers h1{
+    
+    color: aliceblue;
+    letter-spacing: 4px;
+    font: 21px;
+    font-family: 'McqueenMedium';
+}
+.atendimentonumbers a{
+    font-family: 'McqueenLight';
+    font-size: 30px;
+    color: aliceblue;
+}
+.operacao{
+    opacity: 0;
+}
+.operacao h1{
+  
+    color: aliceblue;
+    letter-spacing: 4px;
+    font: 21px;
+    font-family: 'McqueenMedium';
+}
+.operacao span{
+    font-family:sans-serif;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+.finaceiro{
+    opacity: 0;
+}
+.finaceiro h1{
+    color: aliceblue;
+    letter-spacing: 4px;
+    font: 21px;
+    font-family: 'McqueenMedium';
+}
+.carreira{
+    opacity: 0;
+}
+.carreira h1{
+    color: aliceblue;
+    letter-spacing: 4px;
+    font: 21px;
+    font-family: 'McqueenMedium';   
+}
+form{
+    
+    margin-right: 22px;
+}
+.CONTATOFORM{
+    
+    display: flex;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+    min-height: 830px;
+    align-items: flex-end;
+    flex-direction: column;
+    background-image: url("../img/BACKGROUNDCONTATO.png");
+    background-size: cover;
+    text-align: center;
+    justify-content: start;
+    display: flex;
+  
+}
+.headercontato{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.pinkdestaque{
+    animation-name:slideInRight;
+    animation-duration: 1s;
+}
+.inputcontato{
+    opacity: 0;
+    background-color: transparent;
+    border: 1px aliceblue solid;
+    width: 100%;
+    caret-color: #e71e76;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-right: 60px;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    font-family: 'McqueenLight';
+    padding: 10px;
+   
+}
+.inputcontato::placeholder {
+    color: aliceblue;
+    font-family: 'McqueenLight';
+    font-size: 21px;
+    text-align: start   ;
+}
+.inputcontato:focus::placeholder {color:#d16a97; opacity:0.7}
+.inputcontato:nth-child(5){
+    height: 250px;
+    display: flex;
+    resize: none;
+    
+} 
+
+
+.inputcontato:nth-child(5)::placeholder{
+   position: absolute;
+   height: 200px; 
+  
+   resize: none;
+  
+}
+.formsposition{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    
+}
+.alinhaforms{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 60%;
+   width: 80%;
+}
+.buttoncontato{
+    opacity: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+    color: aliceblue;
+    margin-top: 5%;
+    font-size: 25px;
+    font-family: 'GigantRegular';
+}
+.buttoncontato:hover{
+    color:#55a8b2;
+}
+footer{
+    color: #55a9b2b3;   
+    height: 500px;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+footer h1{
+    font-family: 'GigantRegular';
+    font-size: 5rem;
+    color: #e71e76;
+}
+footer h2{
+    margin-top: 60px;
+    font-family: 'GigantRegular';
+    font-size:20px;
+    letter-spacing: 3px;
+    color: aliceblue;
+}
+footer a{
+    text-decoration: underline;
+    color: aliceblue;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #e71e76;
+}
+
+.ativaanimmobile{
+    animation:none;
+    animation-duration:0s;
+   
+}
+
+.ativaanimmobileactive{
+    opacity: 1!important;
+animation:fadeIn;
+animation-duration:1.5s ;
+}
+
+.especialimg{
+    opacity: 0!important;
+    animation: none;
+    animation-duration: 1s;
+
+}
+.especialimgactive{
+    opacity: 1!important;
+    animation: bounceIn;
+    animation-duration: 1s;
+
+}
+
+.icon img{
+ 
+    opacity:0;
+    animation-duration: 1s;
+}
+
+.iconimg{
+    opacity: 0!important;
+    animation: none;
+    animation-duration: 1s;
+
+}
+
+.iconimgactive{
+    animation-iteration-count: infinite;
+    animation:fadeInDown;
+    opacity: 1!important;
+    animation-duration:2s ;
+    animation-delay: 0s;
+}
+.blurfundo{
+    position: absolute;
+    width: 100%;
+
+}
+.efeitoimagem{
+   max-width: 1630px;
+   z-index: 2;
+   width: 100%;
+}
+
+
+
+@media screen and (min-height:1px) and (max-height:550px) {
+    .navbarmodal a {
+        font-family: 'GigantRegular';
+        font-size: 40px;
+        font-weight: normal;
+        color: #ffffff;
+        text-align: center;
+        margin: 5px;
+        z-index: 51;
+        text-shadow: 0 0 20px rgba(57,172,195,1), 0 0 15px rgba(57,172,195,1), 0 0 10px rgba(57,172,195,1);
+    }
+    .navbarmodal a:hover{
+        font-family: 'GigantRegular';
+        font-size: 40px;   
+        font-weight: normal;
+        color: #ea1e77;
+        text-align: center;
+        margin: 5px;
+        z-index: 51;
+    }
+    .arrowbuttonactive {
+        background-color: transparent;
+        margin-bottom: 0%;
+        margin-top:300px;
+        border: none;
+        bottom: unset;
+        position: absolute;
+        animation: shakeY;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    .socialmediamenu {
+        align-items: center;
+        justify-content: center;
+        background-color: #e71e76;
+        height: 200px;
+        width: 100px;
+        position: absolute;
+        right: 0;
+        z-index: 500;
+        bottom: 0;
+        margin-bottom: 40px;
+    }
+}
+@media screen and (min-height:550px) and (max-height:649px){
+    .navbarmodal a {
+        font-family: 'GigantRegular';
+        font-size: 40px;
+        font-weight: normal;
+        color: #ffffff;
+        text-align: center;
+        margin: 5px;
+        z-index: 51;
+        text-shadow: 0 0 20px rgba(57,172,195,1), 0 0 15px rgba(57,172,195,1), 0 0 10px rgba(57,172,195,1);
+    }
+    .navbarmodal a:hover{
+        font-family: 'GigantRegular';
+        font-size: 40px;   
+        font-weight: normal;
+        color: #ea1e77;
+        text-align: center;
+        margin: 5px;
+        z-index: 51;
+    }
+    .planeta2{
+    display: none;
+    }
+}
+@media screen and (min-height:650px) and (max-height:900px) {
+    .navbarmodal a {
+        font-family: 'GigantRegular';
+        font-size: 60px;
+        font-weight: normal;
+        color: #ffffff;
+        text-align: center;
+        margin: 5px;
+        z-index: 51;
+        text-shadow: 0 0 20px rgba(57,172,195,1), 0 0 15px rgba(57,172,195,1), 0 0 10px rgba(57,172,195,1);
+    }
+    .navbarmodal a:hover{
+        font-family: 'GigantRegular';
+        font-size: 60px;   
+        font-weight: normal;
+        color: #ea1e77;
+        text-align: center;
+        margin: 1%;
+       
+}
+}
+@media screen and (min-width:230px) and (max-width:279px) {
+
+        .navbarmodal a {
+            font-family: 'GigantRegular';
+            font-size: 25px;
+            font-weight: normal;
+            color: #ffffff;
+            text-align: center;
+            margin: 5px;
+            z-index: 51;
+            text-shadow: 0 0 20px rgba(57,172,195,1), 0 0 15px rgba(57,172,195,1), 0 0 10px rgba(57,172,195,1);
+        }
+    .homesection{
+        background-image: url("../img/background500px.png")
+    }
+    .alinklogo{
+        margin-left: 20px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: none;
+        margin-right: 20px;
+    }
+    .alinklogo img {
+        width: 90%;
+        margin-left: none;
+    }
+    
+    .socialmediamenu{
+        display: none;
+    }
+    .guardadivstitulo{
+        display: none;
+    }
+
+    .efeitoimagem{
+        position: absolute;
+    }
+    .somenoandroidfrasemobile{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .somenoandroidfrasemobile img{
+        width:120%;
+    }
+    .sectiondois{
+        padding-top: 200px;
+        height:unset;
+    }
+    .containerdois{
+        height: unset;
+        
+    }
+    .img360{
+       
+        width: 80%;
+    }
+    .Logo360andtext{
+        flex-direction: column;
+    }
+    .textpink{
+        margin-right: 0px;
+        width: 100%;
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        padding: 30px 0px 0px 0px;
+        
+    }
+    .textpink p{
+        width: 80%;
+    }
+    .divduasfotos{
+        margin-top: 60px;
+        align-items: unset;
+    }
+    .roboduascores{
+        position: static;
+        width: 100%;
+       
+    }
+    .planeta1{
+        width: 60%;
+        margin-right: 0px;
+        margin-bottom: 150px;
+        position: absolute;
+        display: none;
+    }
+    .planeta2{
+        position:absolute;
+        width: 80%;
+        margin-left: 30%;
+        margin-top: 180%;
+    }
+    .servicostitleonly{
+        height: unset;
+    }
+    .titleservicos{
+        position: absolute;
+        width: 80%;
+        
+    }
+    .cases{
+        flex-direction: column;
+        
+    }
+    .casestitle{
+        margin: 0px;
+        width: 80%;
+    }
+    .discovoador{
+        margin: 0px;
+        width: 80%;
+    }
+    .pinktestecases{
+        padding: 30px 0px 30px 0px;
+        position: static;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        }
+    .pinktestecases p{
+        width: 80vw;
+        text-align: justify;
+    }
+    .containerportifolio {
+        flex-direction: column;
+        width: 100vw;
+        display: flex;
+    }
+    .alignitensportifolio{
+        flex-direction: column;
+    } 
+    .modeloincreasethesound{
+        width: 100%;
+    }
+    .modeloincreasethesound img{
+        width: 100vw;
+    }
+    .contato{
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100px;
+        justify-content: center;
+    }
+    .contatocometo{
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        width: 80%;
+        position: absolute;
+        margin-right: 300px;
+        
+    }
+    .contatocometo img{
+        width: 80%;margin-right: 300px;
+    }
+    .contatotato{
+        width: 50%;
+        margin: 0px;
+    }
+    .contatotato img{
+        display: none;
+        width: 100%;
+    }
+    .formularioecontato{
+        display: none;
+    }
+    .textresponsive240{
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0px 60px 0px
+    }
+    .textresponsive240 h1{
+        font-family: 'McqueenMedium';
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .textresponsive240 a{
+        font-size: 20px;
+        font-family: 'McqueenLight';
+        color: aliceblue;
+    }
+    .imgsucessresponsivefim{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .modelofundorosa{
+        width: 100vw;
+    }
+    footer{
+       height:300px;
+    }
+    footer h2{
+        text-align: center;
+        max-width: 90vw;
+        font-size:100%
+    }
+    footer h1{
+        max-width: 90vw;
+        font-size:200%;
+        
+    }
+}  
+@media screen and (min-width:280px) and (max-width:319px){
+    .navbarmodal a {
+        font-family: 'GigantRegular';
+        font-size: 25px;
+        font-weight: normal;
+        color: #ffffff;
+        text-align: center;
+        margin: 5px;
+        z-index: 51;
+        text-shadow: 0 0 20px rgba(57,172,195,1), 0 0 15px rgba(57,172,195,1), 0 0 10px rgba(57,172,195,1);
+    }
+    .homesection{
+        background-image: url("../img/background500px.png")
+    }
+    .alinklogo{
+        margin-left: 20px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: none;
+        margin-right: 20px;
+    }
+    .alinklogo img {
+        width: 90%;
+        margin-left: none;
+    }
+    
+    .socialmediamenu{
+        display: none;
+    }
+    .guardadivstitulo{
+        display: none;
+    }
+
+    .somenoandroidfrasemobile{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .somenoandroidfrasemobile img{
+        width:120%;
+    }
+    .sectiondois{
+        padding-top: 200px;
+        height:unset;
+    }
+    .containerdois{
+        height: unset;
+        
+    }
+    .img360{
+        width: 80%;
+    }
+    .Logo360andtext{
+        flex-direction: column;
+    }
+    .textpink{
+        margin-right: 0px;
+        width: 100%;
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        padding: 30px 0px 0px 0px;
+        
+    }
+    .textpink p{
+        width: 80%;
+    }
+    .divduasfotos{
+        margin-top: 60px;
+        align-items: unset;
+    }
+    .roboduascores{
+        position: static;
+        width: 100%;
+       
+    }
+    .planeta1{
+        width: 60%;
+        margin-right: 0px;
+        margin-bottom: 150px;
+        position: absolute;
+        display: none;
+    }
+    .planeta2{
+        position:absolute;
+        width: 100%;
+        margin-left: 30%;
+        margin-top: 120%;
+    }
+    .servicostitleonly{
+        height: unset;
+    }
+    .titleservicos{
+        position: absolute;
+        width: 80%;
+        
+    }
+    .cases{
+        flex-direction: column;
+        height: 280px;
+    }
+    .casestitle{
+        margin: 0px;
+        width: 80%;
+    }
+    .discovoador{
+        margin: 0px;
+        width: 80%;
+        position: absolute;
+        margin-top: 180px;
+    }
+    .pinktestecases{
+        padding: 30px 0px 30px 0px;
+        position: static;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        }
+    .pinktestecases p{
+        width: 80vw;
+        text-align: justify;
+    }
+    .alignitensportifolio{
+        flex-direction: column;
+    } 
+    .containerportifolio {
+        flex-direction: column;
+        width: 100vw;
+        display: flex;
+    }
+    .modeloincreasethesound{
+        width: 100%;
+    }
+    .modeloincreasethesound img{
+        width: 100vw;
+    }
+    .contato{
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100px;
+        justify-content: center;
+    }
+    .contatocometo{
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        width: 80%;
+        position: absolute;
+        margin-right: 300px;
+        
+    }
+    .contatocometo img{
+        width: 80%;margin-right: 300px;
+    }
+    .contatotato{
+        width: 50%;
+        margin: 0px;
+    }
+    .contatotato img{
+        display: none;
+        width: 100%;
+    }
+    .formularioecontato{
+        display: none;
+    }
+    .textresponsive240{
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0px 60px 0px
+    }
+    .textresponsive240 h1{
+        font-family: 'McqueenMedium';
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .textresponsive240 a{
+        font-size: 20px;
+        font-family: 'McqueenLight';
+        color: aliceblue;
+    }
+    .imgsucessresponsivefim{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .modelofundorosa{
+        width: 100vw;
+    }
+    footer{
+       height:300px;
+    }
+    footer h2{
+        text-align: center;
+        max-width: 90vw;
+        font-size:100%
+    }
+    footer h1{
+        max-width: 90vw;
+        font-size:200%;
+        
+    }
+}  
+@media screen and (min-width:320px) and (max-width:500px) {
+    .homesection{
+        background-image: url("../img/background500px.png")
+    }
+    .navbarmodal a {
+        font-family: 'GigantRegular';
+        font-size: 35px;
+        font-weight: normal;
+        color: #ffffff;
+        text-align: center;
+        margin:5px;
+        z-index: 51;
+        text-shadow: 0 0 20px rgba(57,172,195,1), 0 0 15px rgba(57,172,195,1), 0 0 10px rgba(57,172,195,1);
+    }
+    .alinklogo{
+        margin-left: 20px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav{
+        display: none;
+        margin-right: 20px;
+    }
+    .alinklogo img {
+        width: 90%;
+        margin-left: none;
+    }
+    
+    .socialmediamenu{
+        display: none;
+    }
+    .guardadivstitulo{
+        display: none;
+    }
+
+    .somenoandroidfrasemobile{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .somenoandroidfrasemobile img{
+        width:120%;
+    }
+    .sectiondois{
+        padding-top: 200px;
+        height:unset;
+    }
+    .containerdois{
+        height: unset;
+        
+    }
+    .divduasfotos{
+        margin-top: 60px;
+        align-items: start;
+    }
+    .img360{
+        width: 80%;
+    }
+    .Logo360andtext{
+        flex-direction: column;
+    }
+    .textpink{
+        margin-right: 0px;
+        width: 100%;
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        padding: 30px 0px 0px 0px;
+        
+    }
+    .textpink p{
+        width: 80%;
+    }
+    .roboduascores{
+        position: static;
+        width: 100%;
+       
+    }
+    .planeta1{
+        width: 50%;
+        margin-top: 0px;
+        margin-right: 0px;
+        display: none;
+        position: absolute;
+    }
+    .planeta2{
+        width: 70%;
+        right: 0;
+        margin-top: 80%;
+        display: inline;
+        position: absolute;
+    }
+    .servicostitleonly{
+        height: unset;
+    }
+    .titleservicos{
+        position: absolute;
+        width: 80%;
+        
+    }
+    .containerportifolio {
+        flex-direction: column;
+        width: 100vw;
+        display: flex;
+    }
+    .cases{
+        margin: 60px;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+            }
+    .casestitle{
+        margin-left: 20px;
+        margin-right: 0px;
+        width: 50%;
+    }
+    .discovoador{
+        margin-left:20%;
+        margin-right: 0px;
+        width: 315px;
+        margin-top: 110px;
+        position: absolute; 
+    }
+    .pinktestecases{
+        padding: 30px 0px 30px 0px;
+        position: static;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        }
+    .pinktestecases p{
+        width: 80vw;
+        text-align: justify;
+    }
+    .alignitensportifolio{
+        flex-direction: column;
+    } 
+    .modeloincreasethesound{
+        width: 100%;
+    }
+    .modeloincreasethesound img{
+        width: 100vw;
+    }
+    .contato{
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100px;
+        justify-content: center;
+    }
+    .contatocometo{
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        width: 80%;
+        position: absolute;
+        margin-right: 300px;
+        
+    }
+    .contatocometo img{
+        width: 80%;margin-right: 300px; 
+    }
+    .contatotato{
+        width: 50%;
+        margin: 0px;
+    }
+    .contatotato img{
+        display: none;
+        width: 100%;
+    }
+    .formularioecontato{
+        display: none;
+    }
+    .textresponsive240{
+        display: flex;
+        flex-direction: column;
+        padding: 60px 0px 60px 0px
+    }
+    .textresponsive240 h1{
+        font-family: 'McqueenMedium';
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .textresponsive240 a{
+        font-size: 20px;
+        font-family: 'McqueenLight';
+        color: aliceblue;
+    }
+    .imgsucessresponsivefim{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .modelofundorosa{
+        width: 100vw;
+    }
+    footer{
+       height:300px;
+    }
+    footer h2{
+        text-align: center;
+        max-width: 90vw;
+        font-size:100%
+    }
+    footer h1{
+        max-width: 90vw;
+        font-size:200%;
+        
+    }
+}  
+
+@media  screen and (min-width:400px) and (max-width:500px) {
+    .planeta2{
+        width: 70%;
+        right: 0;
+        margin-top: 55%;
+        display: inline;
+        position: absolute;
+    }  
+}
+
+@media screen and (min-width:500px) and (max-width:800px){
+    .noneno500{
+        display: none;
+    }
+    .homesection{
+        background-image: url("../img/background500px.png")
+    }
+    .alinklogo{
+        margin-left: 20px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        
+        margin-right: 20px;
+    }
+    .alinklogo img {
+        width: 90%;
+        margin-left: none;
+    }
+    
+    .socialmediamenu{
+        display: none;
+    }
+    .guardadivstitulo{
+        display: none;
+    }
+
+    .somenoandroidfrasemobile{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .somenoandroidfrasemobile img{
+        width:120%;
+    }
+    .sectiondois{
+        padding-top: 200px;
+        height:unset;
+    }
+    .containerdois{
+        height: unset;
+        
+    }
+    .divduasfotos{
+        align-items: start;
+        margin-top: 100px;
+    }
+    .img360{
+        width: 80%;
+    }
+    .Logo360andtext{
+        flex-direction: column;
+    }
+    .textpink{
+        margin-right: 0px;
+        width: 100%;
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        padding: 30px 0px 0px 0px;
+        
+    }
+    .textpink p{
+        width: 80%;
+    }
+    .roboduascores{
+        position: static;
+        width: 100%;
+       
+    }
+    .planeta1{
+        width: 50%;
+        margin-top: 0px;
+        margin-right: 0px;
+        display: none;
+        position: absolute;
+    }
+    .planeta2{
+        right: 0;
+        margin-left: 35%;
+        width: 60%;
+        margin-top: 25%;
+        margin-right: 0px;
+        display: inline;
+        position: absolute;
+    }
+    .servicostitleonly{
+        height: unset;
+    }
+    .titleservicos{
+        position: absolute;
+        width: 50%;
+        margin-left: 10%;
+        
+    }
+    .containerportifolio {
+        flex-direction: column;
+        width: 100vw;
+        display: flex;
+    }
+    .cases{
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .casestitle{
+        margin-left: 10%;
+        margin-right: 0px;
+        width: 40%;
+    }
+    .discovoador{
+        margin-top: 60px;
+        margin-left: 40%;
+        position: absolute;
+        margin-right: 0px;
+        width: 60%;
+    }
+    .pinktestecases{
+        margin-top: 60px;
+        padding: 30px 0px 30px 0px;
+        position: static;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        }
+    .pinktestecases p{
+        width: 80vw;
+        text-align: justify;
+    }
+    
+    .alignitensportifolio{
+        flex-direction: column;
+    }
+    .alinharlogos {
+        margin-top: 5%;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    } 
+    .alinharlogos div {
+        height: 100px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+    }
+    .modeloincreasethesound{
+        width: 100%;
+    }
+    .modeloincreasethesound img{
+        width: 100vw;
+    }
+    .contato{
+        width: 100vw;
+        align-items:unset;
+        flex-direction: column;
+        height: 300px;
+        justify-content: end;
+    }
+    .contatocometo{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 80%;
+        position: absolute;
+        margin-right: 30%;
+        
+    }
+    .contatocometo img{
+        
+        position: absolute;
+        display: none;
+    }
+    .cometavaratudo{
+        display: inline;
+        width: 50%;
+        position: absolute;
+        margin-top: 40px;
+        margin-right: 80%;
+    }
+    .contatotato{
+        width: 252px;
+        display: flex;
+        align-items: unset;
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+    }
+    .contatotato img{
+    
+        margin-right: 30px;
+        display: flex;
+        width: 252px;
+    }
+    .formularioecontato{
+        display: none;
+    }
+    .textresponsive240{
+       
+        display: none;
+        flex-direction: column;
+        padding: 60px 0px 60px 0px
+    }
+    .textresponsive240 h1{
+
+        font-family: 'McqueenMedium';
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .textresponsive240 a{
+        font-size: 20px;
+        font-family: 'McqueenLight';
+        color: aliceblue;
+    }
+    .imgsucessresponsivefim{
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .modelofundorosa{
+        width: 100vw;
+    }
+
+
+
+/*800respmodelo*/
+.resp800div{
+    text-align: end;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    width: 100vw;
+    height: 600px;
+    background-size:cover ;
+    background-image: url("../img/BACKGROUNDCONTATO.png");
+}
+.resp800div img{
+    margin-right: 30px;
+    width: 252px;
+    right: 0;
+    justify-content: none;
+    position: absolute;
+}
+.textresponsive800{
+    height: 100%;
+}
+.resp800div h1{
+    margin-right: 30px;
+    font-family: 'McqueenMedium';
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.resp800div h1:nth-child(1){
+    margin-top: 160px;
+}
+.resp800div a{
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: 'McqueenLight';
+    color: aliceblue;
+}
+
+.pesresp800{
+    margin-top: 5px;
+    width: 100vw;
+    display: flex;
+}
+.alinhaimg800resp{
+    width: 30%;
+}
+.alinhatext800resp{
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    display: flex;
+}
+.pesresp800 h1{
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-family: 'GigantRegular';
+}
+.pesresp800 span{
+    color:#55a8b2;
+}
+    footer{
+       height:300px;
+    }
+    footer h2{
+        text-align: center;
+        max-width: 90vw;
+        font-size:100%
+    }
+    footer h1{
+        max-width: 90vw;
+        font-size:200%;
+        
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1024px) {
+    .homesection{
+        background-image: url("../img/background800ate100init.png")
+    }
+    .alinklogo{
+        margin-left: 20px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        
+        margin-right: 20px;
+    }
+    .alinklogo img {
+        width: 90%;
+        margin-left: none;
+    }
+    
+    .socialmediamenu{
+        width: 80px;
+        display: flex;
+    }
+    .alinhaicons {
+        animation-name:animate__bounceIn ; 
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .alinhaicons div{
+        margin-right: 30px;
+    }
+    .guardadivstitulo{
+        display: flex;
+    }
+
+    .somenoandroidfrasemobile{
+        display: none;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .somenoandroidfrasemobile img{
+        width:120%;
+    }
+    .sectiondois{
+        padding-top: 200px;
+        height:unset;
+    }
+    .containerdois{
+        height: unset;
+        
+    }
+    .divduasfotos{
+        margin-top: 120px;
+        align-items: start;
+    }
+    .img360{
+        width: 60%;
+    }
+    .Logo360andtext{
+        flex-direction: column;
+    }
+    .textpink{
+        margin-right: 0px;
+        width: 100%;
+        position: static;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: justify;
+        padding: 30px 0px 0px 0px;
+        
+    }
+    .textpink p{
+        width: 90%;
+    }
+    .roboduascores{
+        position: static;
+        width: 100%;
+       
+    }
+    .planeta1{
+        width: 50%;
+        margin-top: 0px;
+        margin-right: 0px;
+        display: none;
+        position: absolute;
+    }
+    .planeta2{
+        margin-left: 45%;
+        width: 55%;
+        margin-top: 100px;
+        margin-right: 0px;
+        display: inline;
+        position: absolute;
+    }
+    .servicostitleonly{
+        height: unset;
+    }
+    .titleservicos{
+        position: absolute;
+        width: 55%;
+        margin-left: 12%;
+        
+    }
+    .cases{
+        align-items: flex-end;
+        flex-direction: row;
+        height: 200px;
+        justify-content: space-between;
+    }
+    .casestitle{
+        margin-left: 30px;
+        margin-right: 0px;
+        width: 30%;
+    }
+    .alignicons {
+        margin-top: 80px;
+        max-width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    .icon{
+        margin:5%;
+    }
+    .icon img{
+        
+        width: 70%;
+    }
+    .icon p{
+        font-size: 25px;
+    }
+    .icon a{
+        font-size: 25px;
+    }
+    .discovoador{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-left: 60%;
+        position: absolute;
+        margin-right: 0px;
+        width: 40%;
+    }
+    .containerportifolio {
+        flex-direction: column;
+        width: 100vw;
+        display: flex;
+    }
+    .pinktestecases{
+        margin-top: 0px;
+        padding: 30px 0px 30px 0px;
+        position: static;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        }
+    .pinktestecases p{
+        width: 80vw;
+        text-align: justify;
+    }
+    
+    .alignitensportifolio{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .alinharlogos {
+        margin-top: 1%;
+        width: 90%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    } 
+    .alinharlogos div {
+        height: 100px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+    }
+    .modeloincreasethesound{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    .modeloincreasethesound img{
+        width: 80vw;
+    }
+    .contato{
+        width: 100vw;
+        align-items:unset;
+        justify-content: center;
+        flex-direction: column;
+        height: 300px;
+        justify-content: end;
+    }
+    .contatocometo{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 80%;
+        position: absolute;
+        margin-right: 30%;
+        
+    }
+    .contatocometo img{
+        width: 60%; display: none;
+    }
+    .cometavaratudo{
+        width: 40%;
+        margin-top: 150px;
+        margin-right:70%;
+        display: flex;
+        position: absolute;
+    }
+    .contatotato{
+        width:unset;
+        margin: 0px;
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        right: 0;        
+    }
+    .contatotato img{
+        margin-right: 30px;
+        display: flex;
+        width: 252px;
+    }
+    .formularioecontato{
+        display: none;
+    }
+    .textresponsive240{
+       
+        display: none;
+        flex-direction: column;
+        padding: 60px 0px 60px 0px
+    }
+    .textresponsive240 h1{
+
+        font-family: 'McqueenMedium';
+        font-size: 20px;
+        letter-spacing: 3px;
+        color: aliceblue;
+        font-size: 20px;
+    }
+    .textresponsive240 a{
+        font-size: 20px;
+        font-family: 'McqueenLight';
+        color: aliceblue;
+    }
+    .imgsucessresponsivefim{
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .modelofundorosa{
+        width: 100vw;
+    }
+
+
+
+/*800respmodelo*/
+.resp800div{
+    text-align: end;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    width: 100vw;
+    height: 600px;
+    background-size:cover ;
+    background-image: url("../img/bg800modelopink.png");
+}
+.resp800div img{
+    margin-right: 30px;
+    width: 252px;
+    right: 0;
+    justify-content: none;
+    position: absolute;
+}
+.textresponsive800{
+    height: 100%;
+}
+.resp800div h1{
+    margin-right: 30px;
+    font-family: 'McqueenMedium';
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: aliceblue;
+    font-size: 20px;
+}
+.resp800div h1:nth-child(1){
+    margin-top: 160px;
+}
+.resp800div a{
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'McqueenLight';
+    color: aliceblue;
+}
+
+.pesresp800{
+    margin-top: 5px;
+    width: 100vw;
+    display: flex;
+}
+.alinhaimg800resp{
+    width: 40%;
+}
+.alinhatext800resp{
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    display: flex;
+}
+.pesresp800 h1{
+    text-align: center;
+    width: 80%;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+    font-family: 'GigantRegular';
+}
+.noneno800{
+    display: none;
+}
+.alinhatext800resp br{
+    display: none;
+}
+.pesresp800 span{
+    color:#55a8b2;
+}
+    footer{
+       height:300px;
+    }
+    footer h2{
+        text-align: center;
+        max-width: 90vw;
+        font-size:90%
+    }
+    footer h1{
+        max-width: 90vw;
+        font-size:400%;
+        
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1279px){
+    .socialmediamenu{
+        width:85px;
+    }
+    .socialmediamenu div {
+        margin: 5%;
+        align-items: end;
+        margin-right: 30px;
+    }
+    .textpink {
+        padding: 60px 30px 30px 30px;
+        text-align: justify;
+        font-family: 'McqueenLight';
+        font-size: 21px;
+        color: aliceblue;
+        width: 40%;
+        position: absolute;
+        right: 0;
+        margin-right: 0px;
+        background-color: #e71e76;
+    }
+    .sectiondois{
+       padding-top: 120px; 
+    }   
+    .containerportifolio {
+        width: 100vw;
+        display: flex;
+    }
+    .planeta2{
+        display: none
+    }
+    .planeta1{
+        margin-right: 10%;
+    }
+    .discovoador{
+        right: 0;
+        z-index: 4;
+        margin-right: 10%;
+        position: absolute;
+        margin-right: 28px;
+    }
+    .pinktestecases {
+        background-color: #e71e76;
+        width: 80%;
+        height:100px;
+        padding: 30px;
+        position: absolute;
+    }
+    .sectionportifolio{
+        height: 580px;
+    }
+    .alignitensportifolio {
+        margin-top: 140px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .contato{
+        height: 250px;
+    }
+    .contatocometo{
+
+    }
+    .contatocometo img{
+        display: none;
+    }
+    .atendimento {
+        padding: 30px;
+        width: 100%;
+        min-height: 700px;
+        background-image: url("../img/SUCCESSBACKGROUND.png");
+        background-size: cover;
+        background-position-x: -200px;
+    }
+    .cometavaratudo {
+        display: inline;
+        position: absolute;
+        width: 23%;
+        margin-top:12%;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1500px){
+    .socialmediamenu{
+        width:90px;
+    }
+    .socialmediamenu div {
+        margin: 5%;
+        align-items: end;
+        margin-right: 30px;
+    }
+    .textpink {
+        padding: 60px 30px 30px 30px;
+        text-align: justify;
+        font-family: 'McqueenLight';
+        font-size: 21px;
+        color: aliceblue;
+        width: 40%;
+        position: absolute;
+        right: 0;
+        margin-right: 0px;
+        background-color: #e71e76;
+    }
+    .planeta2{
+        display: none
+    }
+    .planeta1{
+        width: 40%;
+        
+        margin-right: 3%;
+    }
+    .discovoador{
+        right: 0px;
+        z-index: 2;
+        position: absolute;
+        margin-top: 10%;
+        margin-right: 18%;
+    }
+    .sectiondois{
+        padding-top: 120px; 
+     }   
+    .containerportifolio {
+        width: 100vw;
+        display: flex;
+    }
+    .pinktestecases {
+        background-color: #e71e76;
+        width: 58%;
+        height:100px;
+        padding: 30px;
+        position: absolute;
+        
+    }
+    .atendimento {
+        padding: 30px;
+        width: 100%;
+        min-height: 700px;
+        background-image: url("../img/SUCCESSBACKGROUND.png");
+        background-size: cover;
+        background-position-x: -70px;
+    }
+    .sectionportifolio{
+        height: 580px;
+    }
+    .modeloincreasethesound img{
+        width: 650px;
+        right: 0;
+    }
+    .alignitensportifolio {
+        margin-top: 80px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .alinharlogos div {
+        height: 100px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+    }
+    .alignicons {
+        max-width: 1100px;
+        width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width:25%;
+        height: 300px;
+        
+    }
+    .icon img{
+        
+        width: 40%;
+    }
+    .contato{
+        height: 180px;
+    }
+    .contatotato img{
+        width: 331px;
+    }
+    .tato {
+        display: flex;
+        width: 331px;
+    }
+    .contatocometo img{
+        display: none;
+    }
+    .cometavaratudo {
+        display: inline;
+        position: absolute;
+        width: 20%;
+        margin-top:10%;
+    }
+    .alinharlogos div {
+        height: 100px;
+        width: 95px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+    }
+}
+@media screen and (min-width:1500px) and (max-width:1800px){
+    .socialmediamenu{
+        width:90px;
+    }
+    .socialmediamenu div {
+        margin: 5%;
+        align-items: end;
+        margin-right: 30px;
+    }
+
+    .textpink {
+        padding: 60px 30px 30px 30px;
+        text-align: justify;
+        font-family: 'McqueenLight';
+        font-size: 21px;
+        color: aliceblue;
+        width: 40%;
+        position: absolute;
+        right: 0;
+        margin-right: 0px;
+        background-color: #e71e76;
+    }
+    .planeta2{
+        display: none
+    }
+    .planeta1{
+        width: 40%;
+        margin-top: 0px;
+        margin-right: 3%;
+    }
+    .discovoador{
+        right: 0px;
+        z-index: 2;
+        position: absolute;
+        margin-top: 10%;
+        margin-right: 15%;
+    }
+    .pinktestecases {
+        background-color: #e71e76;
+        width: 60%;
+        height:100px;
+        padding: 30px;
+        position: absolute;
+        
+    }
+    .pinktestecases p{
+        margin-left: 30px;
+    }
+    .sectionportifolio{
+        height: 580px;
+    }
+    .modeloincreasethesound img{
+        width: 650px;
+        right: 0;
+    }
+    .alignitensportifolio {
+        margin-top: 80px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .alinharlogos div {
+        height: 100px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+    }
+    .alignicons {
+        max-width: 1100px;
+        width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    .containerportifolio {
+        width: 100vw;
+        display: flex;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width:25%;
+        height: 300px;
+        
+    }
+    .icon img{
+        
+        width: 40%;
+    }
+    .contato{
+        height: 250px;
+    }
+    .contatotato img{
+        width: 331px;
+    }
+    .tato {
+        display: flex;
+        width: 331px;
+    }
+    .contatocometo img{
+        display: none;
+    }
+    .cometavaratudo {
+        display: inline;
+        position: absolute;
+        width: 20%;
+        margin-top:9%;
+    }
+}
+@media screen and (min-width:1800px) and (max-width:2000px){
+    .socialmediamenu{
+        width:90px;
+    }
+    .socialmediamenu div {
+        margin: 5%;
+        align-items: end;
+        margin-right: 30px;
+    }
+    .textpink {
+        padding: 60px 30px 30px 30px;
+        text-align: justify;
+        font-family: 'McqueenLight';
+        font-size: 21px;
+        color: aliceblue;
+        width: 40%;
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+        margin-top: 100px;
+        background-color: #e71e76;
+    }
+    .planeta2{
+        display: none
+    }
+    .planeta1{
+        width: 40%;
+        margin-top: 0px;
+        margin-right: 8%;
+        z-index: 5;
+      
+    }
+    .discovoador{
+        right: 0px;
+        z-index: 2;
+        position: absolute;
+        margin-top: 4%;
+        margin-right: 8%;
+    }
+    .pinktestecases {
+        max-width: 1100px;
+        background-color: #e71e76;
+        width: 65%;
+        height:100px;
+        padding: 30px;
+        position: absolute;
+        
+    }
+    .pinktestecases p{
+        margin-left: 30px;
+    }
+    .sectionportifolio{
+        height: 580px;
+    }
+    .modeloincreasethesound img{
+        width: 650px;
+        right: 0;
+    }
+    .alignitensportifolio {
+        margin-top: 80px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .alinharlogos div {
+        height: 100px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+    }
+    .alignicons {
+        max-width: 1100px;
+        width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width:25%;
+        height: 300px;
+        
+    }
+    .icon img{
+        
+        width: 40%;
+    }
+    .contato{
+        height: 250px;
+    }
+    .contatotato img{
+        width: 331px;
+    }
+    .tato {
+        display: flex;
+        width: 331px;
+    }
+    .contatocometo img{
+        display: none;
+    }
+    .cometavaratudo {
+        display: inline;
+        position: absolute;
+        width: 20%;
+        max-width: 315px;
+        margin-top:8%;
+        
+    }
+}
+@media screen and (min-width:2000px){
+    .textpink {
+        padding: 60px 30px 30px 30px;
+        text-align: justify;
+        font-family: 'McqueenLight';
+        font-size: 21px;
+        color: aliceblue;
+        width: 40%;
+        max-width: 900px;
+        position: absolute;
+        right: unset;
+        margin-left: 40%;
+        margin-right: 0px;
+        background-color: #e71e76;
+    }
+    .socialmediamenu{
+        width:90px;
+    }
+    .socialmediamenu div {
+        margin: 5%;
+        align-items: end;
+        margin-right: 30px;
+    }
+    .containerdois {
+        width: 100%;
+        max-width: 1700px;
+        height: 610px;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+    .servicostitleonly {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+    .titleservicos {
+        width: 500px;
+        margin-bottom: 1%;
+        position: static;
+    }
+    .planeta2{
+        display: none
+    }
+    .planeta1{
+        width: 35%;
+        margin-top: 0px;
+        margin-right: 300px;
+    }
+    .discovoador{
+        right: 0px;
+        z-index: 2;
+        position: absolute;
+        width: 25%;
+        margin-top: 5%;
+        margin-right: 15%;
+    }
+    .pinktestecases {
+        background-color: #e71e76;
+        width: 53%;
+        height:100px;
+        max-width: 1100px;
+        padding: 30px;
+        position: absolute;
+        
+        
+    }
+    .pinktestecases p{
+        margin-left: 30px;
+    }
+    .sectionportifolio{
+        height: 580px;
+    }
+    .modeloincreasethesound img{
+        width: 650px;
+        right: 0;
+    }
+    .alignitensportifolio {
+        margin-top: 80px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .alinharlogos div {
+        height: 100px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+    }
+    .alignicons {
+        max-width: 1100px;
+        width: 1100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width:25%;
+        height: 300px;
+        
+    }
+    .icon img{
+        
+        width: 40%;
+    }
+    .contato{
+        height: 250px;
+    }
+    .contatotato img{
+        width: 331px;
+    }
+    .tato {
+        display: flex;
+        width: 331px;
+    }
+    .contatocometo img{
+        display: none;
+    }
+    .cometavaratudo {
+        display: inline;
+        position: absolute;
+        width: 20%;
+        margin-top:6%;
+    }
+}
+@media screen and (min-width:2500px){
+    .textpink {
+        padding: 60px 30px 30px 30px;
+        text-align: justify;
+        font-family: 'McqueenLight';
+        font-size: 21px;
+        color: aliceblue;
+        width: 40%;
+        max-width: 900px;
+        position: absolute;
+        right: unset;
+        margin-left: 30%;
+        margin-right: 0px;
+        background-color: #e71e76;
+    }
+}
+@media screen and (min-width:2800px){
+    .textpink {
+        padding: 60px 30px 30px 30px;
+        text-align: justify;
+        font-family: 'McqueenLight';
+        font-size: 21px;
+        color: aliceblue;
+        width: 40%;
+        max-width: 900px;
+        position: absolute;
+        right: unset;
+        margin-left: 27%;
+        margin-right: 0px;
+        background-color: #e71e76;
+    }
+}

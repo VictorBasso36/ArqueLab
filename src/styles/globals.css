@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('../../public/MontserratLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+@font-face {
+    font-family: 'MontserratBlack';
+    src: url('../../public/MontserratBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+:root{
+    --font-h1:'MontserratBlack';
+    --font-h2:'MontserratBlack';
+    --font-p:'MontserratLight';
+    --border-radius:12px;
+    --Main-Color:#ff187a;
+    --Second-Color:#333333;
+    --Text-Conteudo:black;
+}
+
+body{
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+border-radius: 12px 0px 0px 12px;
+background-color: var(--Main-Color);
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+
+}
+.Mui-selected{
+  background-color: var(--Main-Color)!important;
+}

@@ -1,0 +1,76 @@
+.FooterMain{
+    background-color:var(--Second-Color);
+    width: 100%;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+
+}
+.FooterMain svg{
+    width: 250px;
+    margin: 60px 0vw;
+}
+
+
+.FooterLinks{
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    list-style: none;
+     
+}
+.FooterLinks li{
+    width: 250px;
+   
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.listcard{
+    margin: 60px;
+}
+
+.FooterLinks li ul{
+    list-style: none;
+}
+
+.FooterLinks li ul li{
+    list-style: none;
+    font-family: var(--font-p);
+}
+
+
+.FooterMain h3{
+    font-family: var(--font-h2);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration:underline var(--Main-Color);
+}
+
+.LinkOverMain{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    align-items: center;
+    max-width: 90%;
+    text-align: center;
+    font-family: var(--font-p);
+}
+.LinkOverMain:hover{
+    color: var(--Main-Color);
+}
+
+
+
+@media screen and (min-width:280px) and (max-width: 350px)`{
+
+}
