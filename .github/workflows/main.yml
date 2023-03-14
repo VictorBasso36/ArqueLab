@@ -21,6 +21,11 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: './out'
-          remote-dir: '/Web/arquelab'
-          clean: true
+          protocol: 'ftp'
+          port: 21
+          local-dir: './out/'
+          server-dir: '/Web/arquelab/'
+          exclude: |
+            .git*
+            *.map
+          timeout: 600000
