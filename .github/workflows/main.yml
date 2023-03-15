@@ -24,7 +24,7 @@ jobs:
           protocol: 'ftp'
           port: 21
           local-dir: './out/'
-          server-dir: '/public'
+          server-dir: '/public/'
           exclude: |
             .git*
             *.map
