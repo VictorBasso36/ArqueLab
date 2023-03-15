@@ -16,7 +16,26 @@
     font-style: normal;
     font-display: swap;
   }
-  
+  #elementtt{
+    pointer-events: none!important;
+   opacity: 0!important;
+}
+@font-face {
+    font-family: 'McqueenBold';
+    src: url('/McQueenDisplayTrial-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'McqueenMedium';
+    src: url('/McQueenDisplayTrial-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'McqueenLight';
+    src: url('/McQueenDisplayTrial-Light.otf') format('opentype');
+}
+@font-face {
+    font-family: 'GigantRegular';
+    src: url('/giganticfs-d9dor.ttf') format('truetype');
+}
 :root{
     --font-h1:'MontserratBlack';
     --font-h2:'MontserratBlack';

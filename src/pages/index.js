@@ -46,7 +46,8 @@ export default function Home() {
       <Head>
           <title>Arqué Lab</title>
           <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-   
+          <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+          </script>
           <meta name="referrer" content="no-referrer-when-downgrade"/>
           <meta name="keywords" content="keywordsHere"/>
           <meta name="description" content="A Arqué.Lab é uma agência de comunicação full service, com know-how tanto para B2B quanto para o B2C. Visando soluções estratégicas, temos foco e comprometimento com resultados desde a primeira etapa da criação." />
@@ -69,6 +70,8 @@ export default function Home() {
             <script key="menuhover.js" src="/src/js/menuhover.js"></script>
             <script key="navbartransform.js" src="/src/js/navbartransform.js"></script>
             <script key="loader.js" src="/src/js/loader.js"></script>*/}
+          <link rel="stylesheet" href="/src/style/style.css"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         </Head> 
 
       <div

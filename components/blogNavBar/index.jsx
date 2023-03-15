@@ -48,10 +48,10 @@ export default function BlogNavbar() {
             </Link>
             <div className={styles.navList}>
                 <ul>
-                    <a href="/" rel="noreferrer" >{router.asPath  === "SITE" ? <span><li>SITE</li></span> : <li>SITE</li>}</a>
-                    <a href="/blog"  rel="noreferrer" >{router.pathname.includes('/blog') ? <span><li>BLOG</li></span> : <li>BLOG</li>}</a>
-                    <a href="/#contato"  rel="noreferrer" >{router.asPath  === "CONTATO" ? <span><li>CONTATO</li></span> : <li>CONTATO</li>}</a>
-                    <a href="/#doisdoissec"  rel="noreferrer" >{router.asPath  === "SOBRE" ? <span><li>SOBRE</li></span> : <li>SOBRE</li>}</a>
+                    <Link href="/" rel="noreferrer" >{router.asPath  === "SITE" ? <span><li>SITE</li></span> : <li>SITE</li>}</Link>
+                    <Link href="/blog"  rel="noreferrer" >{router.pathname.includes('/blog') ? <span><li>BLOG</li></span> : <li>BLOG</li>}</Link>
+                    <Link href="/#contato"  rel="noreferrer" >{router.asPath  === "CONTATO" ? <span><li>CONTATO</li></span> : <li>CONTATO</li>}</Link>
+                    <Link href="/#doisdoissec"  rel="noreferrer" >{router.asPath  === "SOBRE" ? <span><li>SOBRE</li></span> : <li>SOBRE</li>}</Link>
                 </ul>
             </div>
 
