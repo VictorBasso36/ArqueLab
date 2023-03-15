@@ -77,7 +77,8 @@ export default function Home() {
       
     }}
   />
-    
+    <Link href="/blog">
+    </Link>
     </>
   )
 }
