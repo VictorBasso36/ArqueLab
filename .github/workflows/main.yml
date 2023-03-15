@@ -24,7 +24,7 @@ jobs:
           protocol: 'ftp'
           port: 21
           local-dir: './out/'
-          server-dir: '/Web/arquelab/'
+          server-dir: '/Web/arquelabsite/'
           exclude: |
             .git*
             *.map
