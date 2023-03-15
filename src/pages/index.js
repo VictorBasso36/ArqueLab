@@ -61,15 +61,7 @@ export default function Home() {
           <meta name="facebook-domain-verification" content="da3asienvqcdm9j8f2dcv6vb20dr9i" />
 
           <link rel="icon" type="image/x-icon" href="/src/img/logonavbarsiimple.png"/>
-          {/* <script key="reveal.js" src="/src/js/reveal.js"></script>
-            <script key="scrollanimation.js" src="/src/js/scrollanimation.js"></script>
-            <script key="trocacortedasimagens.js" src="/src/js/trocacortedasimagens.js"></script>
-            <script key="navmodalmenu.js" src="/src/js/navmodalmenu.js"></script>
-            <script key="hoverseta.js" src="/src/js/hoverseta.js"></script>
-            <script key="socialmedia.js" src="/src/js/socialmedia.js"></script>
-            <script key="menuhover.js" src="/src/js/menuhover.js"></script>
-            <script key="navbartransform.js" src="/src/js/navbartransform.js"></script>
-            <script key="loader.js" src="/src/js/loader.js"></script>*/}
+         
           <link rel="stylesheet" href="/src/style/style.css"/>
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         </Head> 
