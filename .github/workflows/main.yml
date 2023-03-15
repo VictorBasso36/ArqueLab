@@ -25,6 +25,7 @@ jobs:
           port: 21
           local-dir: './out/'
           server-dir: '/public/'
+          
           exclude: |
             .git*
             *.map
