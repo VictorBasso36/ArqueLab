@@ -2,10 +2,11 @@ name: Deploy to FTP
 
 on:
   push:
-     branches:
+    branches:
       - main
   repository_dispatch:
-    types: [deploy]
+    types: [push]
+
 
 jobs:
   deploy:
