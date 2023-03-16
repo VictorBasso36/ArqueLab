@@ -1,4 +1,4 @@
-name: DeploytoFTP
+name: DeployToPush
 
 on:
   push:
