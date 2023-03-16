@@ -1,9 +1,14 @@
-name: Deploy to FTP
+name: DeploytoFTP
 
 on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [my-webhook-event]
+
+
+
 
 jobs:
   deploy:
