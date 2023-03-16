@@ -139,13 +139,10 @@ export default function blogPost({post, category, random}) {
               </div>
             </div>
         </div>
-        
-        {category != '' ?
+                  {console.log(category)}
+        {category != ''  &&
+
           <>
-          
-          </> 
-        :
-        <>
           <div className={styles.PostRelacionados} >
             <h2>Artigos <br />
             <span>Relacionados</span></h2>
@@ -155,7 +152,7 @@ export default function blogPost({post, category, random}) {
                       {category.map((category, index) => {
                   
                                 
-                              if(index != 0){
+                              
                                   return(
                                   <>
                                       <Link key={category.id} style={{textDecoration:"none", color:"unset"}} href={"blog/post/" + category.id}>
@@ -176,7 +173,7 @@ export default function blogPost({post, category, random}) {
                                       </Link>
                                   </>
                                   )
-                            }
+                            
                       })}
           </div>
         </> 
