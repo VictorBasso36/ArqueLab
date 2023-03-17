@@ -155,7 +155,7 @@ export default function blogPost({post, category, random}) {
                               
                                   return(
                                   <>
-                                      <Link key={category.id} style={{textDecoration:"none", color:"unset"}} href={"blog/post/" + category.id}>
+                                      <Link key={category.id} style={{textDecoration:"none", color:"unset"}} href={"/blog/post/" + category.id}>
                                       <article className={styles.BlogCarder}>
                                       
                                           
