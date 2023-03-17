@@ -1,0 +1,31 @@
+name: DeployToPush
+
+on:
+  repository_dispatch:
+    types: [deploy-to-ftp]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Build project
+        run: npm run build
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: 'ftp'
+          port: 21
+          local-dir: './out/'
+          server-dir: '/public/'
+          
+          exclude: |
+            .git*
+            *.map
+          timeout: 600000
