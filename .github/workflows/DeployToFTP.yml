@@ -5,7 +5,7 @@ on:
     branches:
       - main
   repository_dispatch:
-    types: [my-webhook-event]
+    types: [deploy-to-ftp]
 
 jobs:
   deploy:
