@@ -2,8 +2,8 @@
 
 
 module.exports = {
-  trailingSlash: true,
   reactStrictMode: true,
+  trailingSlash: true,
   images: {
     unoptimized: true
   },
